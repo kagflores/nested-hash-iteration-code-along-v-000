@@ -15,7 +15,7 @@ require 'pry'
   # }
 
 def remove_strawberry(contacts)
-  contacts.each do |person, data|
+  contacts.each do |person, data_hash|
     data.each do |attribute, value|
       if attribute == :favorite_ice_cream_flavors
         :favorite_ice_cream_flavors.delete("strawberry")
